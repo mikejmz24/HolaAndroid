@@ -4,13 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.migueljimenez.holaandroid.MainActivity">
+    app:layout_editor_absoluteY="@android:dimen/app_icon_size"
+    tools:background="@android:color/background_dark"
+    tools:context="com.example.migueljimenez.holaandroid.MainActivity"
+    tools:layout_editor_absoluteX="@android:dimen/dialog_min_width_major">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="32dp"
+        android:gravity="center"
         android:text="Hola android"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068"
+        app:layout_editor_absoluteX="@android:dimen/dialog_min_width_major" />
+
 </android.support.constraint.ConstraintLayout>
